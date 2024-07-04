@@ -1,4 +1,4 @@
-import 'package:bookly_app/core/utils/app_assets.dart';
+import 'package:codelibrary/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {

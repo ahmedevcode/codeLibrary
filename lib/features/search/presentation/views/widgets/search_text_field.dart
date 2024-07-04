@@ -1,5 +1,5 @@
-import 'package:bookly_app/core/utils/app_colors.dart';
-import 'package:bookly_app/features/search/presentation/cubit/search_cubit.dart';
+import 'package:codelibrary/core/utils/app_colors.dart';
+import 'package:codelibrary/features/search/presentation/cubit/search_cubit.dart';
 import 'package:flutter/material.dart';
 
 class SearchTextField extends StatelessWidget {
@@ -13,7 +13,7 @@ class SearchTextField extends StatelessWidget {
       cursorColor: AppColors.white,
       textInputAction: TextInputAction.search,
       onEditingComplete: () {
-        if(SearchCubit.get(context).searchController.text.isNotEmpty){
+        if (SearchCubit.get(context).searchController.text.isNotEmpty) {
           SearchCubit.get(context).fetchSearedBooks(
             bookName: SearchCubit.get(context).searchController.text,
           );

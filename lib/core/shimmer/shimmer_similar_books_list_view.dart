@@ -1,5 +1,6 @@
-import 'package:bookly_app/core/shimmer/shimmer_container_effect.dart';
+import 'package:codelibrary/core/shimmer/shimmer_container_effect.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ShimmerSimilarBooksListView extends StatelessWidget {
   const ShimmerSimilarBooksListView({Key? key}) : super(key: key);
@@ -7,7 +8,7 @@ class ShimmerSimilarBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.18,
+      height: 90.h,
       child: ListView.separated(
         physics: const NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
@@ -17,7 +18,7 @@ class ShimmerSimilarBooksListView extends StatelessWidget {
           aspectRatio: 2.7 / 4,
           child: ShimmerContainerEffect(),
         ),
-        separatorBuilder: (context, index) => const SizedBox(width: 10.0),
+        separatorBuilder: (context, index) => SizedBox(width: 10.0.w),
       ),
     );
   }

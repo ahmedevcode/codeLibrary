@@ -1,9 +1,9 @@
-import 'package:bookly_app/config/icons/icons_broken.dart';
-import 'package:bookly_app/config/routes/app_routes.dart';
-import 'package:bookly_app/core/widgets/custom_back_button.dart';
-import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly_app/features/home/presentation/cubits/similar_books_cubit/similar_books_cubit.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/details_view_body.dart';
+import 'package:codelibrary/config/icons/icons_broken.dart';
+import 'package:codelibrary/config/routes/app_routes.dart';
+import 'package:codelibrary/core/widgets/custom_back_button.dart';
+import 'package:codelibrary/features/home/data/models/book_model/book_model.dart';
+import 'package:codelibrary/features/home/presentation/cubits/similar_books_cubit/similar_books_cubit.dart';
+import 'package:codelibrary/features/home/presentation/views/widgets/details_view_body.dart';
 import 'package:flutter/material.dart';
 
 class DetailsView extends StatefulWidget {

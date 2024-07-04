@@ -1,12 +1,13 @@
-import 'package:bookly_app/config/routes/app_routes.dart';
-import 'package:bookly_app/core/utils/app_assets.dart';
-import 'package:bookly_app/core/utils/app_colors.dart';
-import 'package:bookly_app/core/utils/app_strings.dart';
-import 'package:bookly_app/core/utils/app_styles.dart';
-import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/book_rating.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_image.dart';
+import 'package:codelibrary/config/routes/app_routes.dart';
+import 'package:codelibrary/core/utils/app_assets.dart';
+import 'package:codelibrary/core/utils/app_colors.dart';
+import 'package:codelibrary/core/utils/app_strings.dart';
+import 'package:codelibrary/core/utils/app_styles.dart';
+import 'package:codelibrary/features/home/data/models/book_model/book_model.dart';
+import 'package:codelibrary/features/home/presentation/views/widgets/book_rating.dart';
+import 'package:codelibrary/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BookListViewItem extends StatelessWidget {
   const BookListViewItem({Key? key, required this.book}) : super(key: key);
@@ -15,16 +16,17 @@ class BookListViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.sizeOf(context).height;
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15.0),
       child: InkWell(
         borderRadius: BorderRadius.circular(8.0),
-        onTap: (){
-          Navigator.pushNamed(context, Routes.detailsView,
-              arguments: book);
+        onTap: () {
+          Navigator.pushNamed(context, Routes.detailsView, arguments: book);
         },
         child: SizedBox(
-          height: 120,
+          height: 150.h,
           child: Row(
             children: [
               Expanded(
@@ -36,7 +38,7 @@ class BookListViewItem extends StatelessWidget {
                 ),
               ),
               Expanded(
-                flex: 7,
+                flex: 5,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 15.0, vertical: 10.0),
@@ -45,7 +47,7 @@ class BookListViewItem extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        book.volumeInfo!.title??'Title Not Found',
+                        book.volumeInfo!.title ?? 'Title Not Found',
                         style: AppStyles.textStyle20.copyWith(
                           fontFamily: AppAssets.fontGtSectraFine,
                         ),

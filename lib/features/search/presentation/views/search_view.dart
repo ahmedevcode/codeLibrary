@@ -1,8 +1,8 @@
-import 'package:bookly_app/config/icons/icons_broken.dart';
-import 'package:bookly_app/core/widgets/custom_back_button.dart';
-import 'package:bookly_app/features/search/presentation/cubit/search_cubit.dart';
-import 'package:bookly_app/features/search/presentation/views/widgets/search_text_field.dart';
-import 'package:bookly_app/features/search/presentation/views/widgets/search_view_body.dart';
+import 'package:codelibrary/config/icons/icons_broken.dart';
+import 'package:codelibrary/core/widgets/custom_back_button.dart';
+import 'package:codelibrary/features/search/presentation/cubit/search_cubit.dart';
+import 'package:codelibrary/features/search/presentation/views/widgets/search_text_field.dart';
+import 'package:codelibrary/features/search/presentation/views/widgets/search_view_body.dart';
 import 'package:flutter/material.dart';
 
 class SearchView extends StatelessWidget {
@@ -18,7 +18,7 @@ class SearchView extends StatelessWidget {
           IconButton(
             icon: const Icon(IconBroken.Search),
             onPressed: () {
-              if(SearchCubit.get(context).searchController.text.isNotEmpty){
+              if (SearchCubit.get(context).searchController.text.isNotEmpty) {
                 SearchCubit.get(context).fetchSearedBooks(
                   bookName: SearchCubit.get(context).searchController.text,
                 );

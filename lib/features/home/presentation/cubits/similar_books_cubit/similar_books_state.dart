@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
+import 'package:codelibrary/features/home/data/models/book_model/book_model.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class SimilarBooksState extends Equatable {

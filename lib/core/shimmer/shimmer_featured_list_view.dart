@@ -1,4 +1,4 @@
-import 'package:bookly_app/core/shimmer/shimmer_container_effect.dart';
+import 'package:codelibrary/core/shimmer/shimmer_container_effect.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 

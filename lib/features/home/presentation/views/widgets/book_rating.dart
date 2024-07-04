@@ -1,5 +1,5 @@
-import 'package:bookly_app/core/utils/app_colors.dart';
-import 'package:bookly_app/core/utils/app_styles.dart';
+import 'package:codelibrary/core/utils/app_colors.dart';
+import 'package:codelibrary/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -29,7 +29,7 @@ class BookRating extends StatelessWidget {
         const SizedBox(
           width: 5,
         ),
-         Text(
+        Text(
           rating.toString(),
           style: AppStyles.textStyle16,
         ),

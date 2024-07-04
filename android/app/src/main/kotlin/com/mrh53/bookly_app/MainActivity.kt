@@ -1,4 +1,4 @@
-package com.mrh53.bookly_app
+package com.codelibrary
 
 import io.flutter.embedding.android.FlutterActivity
 

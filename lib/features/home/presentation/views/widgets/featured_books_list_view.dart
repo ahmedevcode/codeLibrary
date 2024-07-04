@@ -1,9 +1,9 @@
-import 'package:bookly_app/config/routes/app_routes.dart';
-import 'package:bookly_app/core/shimmer/shimmer_featured_list_view.dart';
-import 'package:bookly_app/core/widgets/custom_error_widget.dart';
-import 'package:bookly_app/features/home/presentation/cubits/featured_books_cubit/featured_books_cubit.dart';
-import 'package:bookly_app/features/home/presentation/cubits/featured_books_cubit/featured_books_state.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_image.dart';
+import 'package:codelibrary/config/routes/app_routes.dart';
+import 'package:codelibrary/core/shimmer/shimmer_featured_list_view.dart';
+import 'package:codelibrary/core/widgets/custom_error_widget.dart';
+import 'package:codelibrary/features/home/presentation/cubits/featured_books_cubit/featured_books_cubit.dart';
+import 'package:codelibrary/features/home/presentation/cubits/featured_books_cubit/featured_books_state.dart';
+import 'package:codelibrary/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -36,6 +36,7 @@ class FeaturedBooksListView extends StatelessWidget {
               aspectRatio: 1.5,
               viewportFraction: 0.45,
               enlargeCenterPage: true,
+              enableInfiniteScroll: true,
             ),
           );
         } else if (state is FeaturedBooksFailureState) {
@@ -47,4 +48,3 @@ class FeaturedBooksListView extends StatelessWidget {
     );
   }
 }
-

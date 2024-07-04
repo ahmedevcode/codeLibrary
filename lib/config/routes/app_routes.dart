@@ -1,18 +1,17 @@
-import 'package:bookly_app/core/api/api_services_implementation.dart';
-import 'package:bookly_app/core/utils/app_strings.dart';
-import 'package:bookly_app/core/utils/service_locator.dart';
-import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly_app/features/home/data/repository/home_repository_implementation.dart';
-import 'package:bookly_app/features/home/presentation/cubits/featured_books_cubit/featured_books_cubit.dart';
-import 'package:bookly_app/features/home/presentation/cubits/newset_books_cubit/newset_books_cubit.dart';
-import 'package:bookly_app/features/home/presentation/cubits/similar_books_cubit/similar_books_cubit.dart';
-import 'package:bookly_app/features/home/presentation/views/details_view.dart';
-import 'package:bookly_app/features/home/presentation/views/home_view.dart';
-import 'package:bookly_app/features/home/presentation/views/web_view.dart';
-import 'package:bookly_app/features/search/data/repository/search_repository_implementation.dart';
-import 'package:bookly_app/features/search/presentation/cubit/search_cubit.dart';
-import 'package:bookly_app/features/search/presentation/views/search_view.dart';
-import 'package:bookly_app/features/splash/presentation/views/splash_view.dart';
+import 'package:codelibrary/core/utils/app_strings.dart';
+import 'package:codelibrary/core/utils/service_locator.dart';
+import 'package:codelibrary/features/home/data/models/book_model/book_model.dart';
+import 'package:codelibrary/features/home/data/repository/home_repository_implementation.dart';
+import 'package:codelibrary/features/home/presentation/cubits/featured_books_cubit/featured_books_cubit.dart';
+import 'package:codelibrary/features/home/presentation/cubits/newset_books_cubit/newset_books_cubit.dart';
+import 'package:codelibrary/features/home/presentation/cubits/similar_books_cubit/similar_books_cubit.dart';
+import 'package:codelibrary/features/home/presentation/views/details_view.dart';
+import 'package:codelibrary/features/home/presentation/views/home_view.dart';
+import 'package:codelibrary/features/home/presentation/views/web_view.dart';
+import 'package:codelibrary/features/search/data/repository/search_repository_implementation.dart';
+import 'package:codelibrary/features/search/presentation/cubit/search_cubit.dart';
+import 'package:codelibrary/features/search/presentation/views/search_view.dart';
+import 'package:codelibrary/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -68,7 +67,11 @@ class AppRoutes {
         );
       case Routes.webView:
         final previewLink = settings.arguments as String;
-        return MaterialPageRoute(builder: (context) => WebView(previewLink: previewLink,),);
+        return MaterialPageRoute(
+          builder: (context) => WebView(
+            previewLink: previewLink,
+          ),
+        );
       default:
         return undefinedRoute();
     }

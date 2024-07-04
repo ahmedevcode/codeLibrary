@@ -1,5 +1,5 @@
-import 'package:bookly_app/core/api/api_services.dart';
-import 'package:bookly_app/core/api/end_points.dart';
+import 'package:codelibrary/core/api/api_services.dart';
+import 'package:codelibrary/core/api/end_points.dart';
 import 'package:dio/dio.dart';
 
 class ApiServicesImplementation implements ApiServices {
@@ -21,7 +21,7 @@ class ApiServicesImplementation implements ApiServices {
     Map<String, dynamic>? queryParameters,
   }) async {
     Response response =
-        await _dio!.get(endPoint,queryParameters: queryParameters);
+        await _dio!.get(endPoint, queryParameters: queryParameters);
     return response.data['items'];
   }
 }

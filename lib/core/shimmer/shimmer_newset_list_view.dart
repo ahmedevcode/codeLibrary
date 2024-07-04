@@ -1,4 +1,4 @@
-import 'package:bookly_app/core/shimmer/shimmer_container_effect.dart';
+import 'package:codelibrary/core/shimmer/shimmer_container_effect.dart';
 import 'package:flutter/material.dart';
 
 class ShimmerNewsetListView extends StatelessWidget {
@@ -11,11 +11,11 @@ class ShimmerNewsetListView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemCount: 10,
-      itemBuilder: (context, index) => SizedBox(
+      itemBuilder: (context, index) => const SizedBox(
         height: 120,
         child: Row(
           children: [
-            const Expanded(
+            Expanded(
               flex: 2,
               child: ShimmerContainerEffect(
                 height: double.infinity,
@@ -24,26 +24,26 @@ class ShimmerNewsetListView extends StatelessWidget {
             Expanded(
               flex: 7,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15.0,vertical: 10.0),
+                padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children:  [
-                    const ShimmerContainerEffect(
+                  children: [
+                    ShimmerContainerEffect(
                       width: double.infinity,
                       height: 15,
                     ),
-                    const ShimmerContainerEffect(
+                    ShimmerContainerEffect(
                       width: 200,
                       height: 15,
                     ),
-                    const ShimmerContainerEffect(
+                    ShimmerContainerEffect(
                       width: 150,
                       height: 15,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children:const [
+                      children: [
                         ShimmerContainerEffect(
                           width: 80,
                           height: 15,

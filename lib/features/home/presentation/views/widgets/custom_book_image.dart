@@ -1,5 +1,5 @@
-import 'package:bookly_app/config/icons/icons_broken.dart';
-import 'package:bookly_app/core/utils/app_colors.dart';
+import 'package:codelibrary/config/icons/icons_broken.dart';
+import 'package:codelibrary/core/utils/app_colors.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 

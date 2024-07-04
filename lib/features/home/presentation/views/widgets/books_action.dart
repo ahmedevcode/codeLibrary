@@ -1,8 +1,8 @@
-import 'package:bookly_app/core/functions/url_launcher.dart';
-import 'package:bookly_app/core/utils/app_colors.dart';
-import 'package:bookly_app/core/utils/app_strings.dart';
-import 'package:bookly_app/core/widgets/custom_button.dart';
-import 'package:bookly_app/features/home/data/models/book_model/pdf.dart';
+import 'package:codelibrary/core/functions/url_launcher.dart';
+import 'package:codelibrary/core/utils/app_colors.dart';
+import 'package:codelibrary/core/utils/app_strings.dart';
+import 'package:codelibrary/core/widgets/custom_button.dart';
+import 'package:codelibrary/features/home/data/models/book_model/pdf.dart';
 import 'package:flutter/material.dart';
 
 class BooksAction extends StatelessWidget {
@@ -27,7 +27,8 @@ class BooksAction extends StatelessWidget {
           onPressed: () {
             if (pdf.isAvailable!) {
               customUrlLauncher(
-                  pdf.acsTokenLink?.replaceFirst('http', 'https')??'https://google.com');
+                  pdf.acsTokenLink?.replaceFirst('http', 'https') ??
+                      'https://google.com');
             }
           },
           backgroundColor: AppColors.brown,

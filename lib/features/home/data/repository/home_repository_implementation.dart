@@ -1,8 +1,8 @@
-import 'package:bookly_app/core/api/api_services_implementation.dart';
-import 'package:bookly_app/core/api/end_points.dart';
-import 'package:bookly_app/core/errors/failures.dart';
-import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly_app/features/home/data/repository/home_repository.dart';
+import 'package:codelibrary/core/api/api_services_implementation.dart';
+import 'package:codelibrary/core/api/end_points.dart';
+import 'package:codelibrary/core/errors/failures.dart';
+import 'package:codelibrary/features/home/data/models/book_model/book_model.dart';
+import 'package:codelibrary/features/home/data/repository/home_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 
@@ -55,7 +55,8 @@ class HomeRepositoryImplementation implements HomeRepository {
   }
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetchSimilarBooks({required String category}) async{
+  Future<Either<Failure, List<BookModel>>> fetchSimilarBooks(
+      {required String category}) async {
     try {
       List<dynamic> data = await apiServicesImplementation.get(
         endPoint: EndPoints.volumes,
@@ -65,7 +66,7 @@ class HomeRepositoryImplementation implements HomeRepository {
         },
       );
       List<BookModel> books =
-      data.map((book) => BookModel.fromJson(book)).toList();
+          data.map((book) => BookModel.fromJson(book)).toList();
       return Right(books);
     } catch (error) {
       if (error is DioError) {
