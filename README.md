@@ -41,10 +41,10 @@ https://www.figma.com/design/W2Zf2gRRtU4NylQR65L9IH/book-library-(Community)?nod
      <td>Search View</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/950942d6-7f7a-4539-a1e7-a54ed0cc2118.jpg" width=800 height=600></td>
-    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/13067d2c-bab8-4849-8d00-b69b2ed18ad4.jpg" width=800 height=600></td>
-    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/17d31347-5b0c-449a-8226-6cef8086068e.jpg" width=800 height=600></td>
-    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/11816888-0f81-413a-934e-2e687bae50ca.jpg" width=800 height=600></td>
-    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/95d45383-cb65-4362-ae76-677cc54285bd.jpg" width=800 height=600></td>
+    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/950942d6-7f7a-4539-a1e7-a54ed0cc2118" width=600 height=600></td>
+    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/13067d2c-bab8-4849-8d00-b69b2ed18ad4" width=600 height=600></td>
+    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/17d31347-5b0c-449a-8226-6cef8086068e" width=600 height=600></td>
+    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/11816888-0f81-413a-934e-2e687bae50ca" width=600 height=600></td>
+    <td><img src="https://github.com/ahmedevcode/codeLibrary/assets/75087008/95d45383-cb65-4362-ae76-677cc54285bd" width=600 height=600></td>
   </tr>
  </table>
